@@ -1,39 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Pavi Venkat Sridhar</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Your Name</h1>
-        <p>Mechanical Engineering | Robotics | AI</p>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">PAVI</div>
+    <ul class="nav-links">
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#community">COMMUNITY</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
+  <!-- HERO -->
+  <header class="hero">
+    <img src="assets/images/hero.jpg" alt="Rocket Project">
+    <div class="hero-text">
+      <h1>Pavi Venkat Sridhar</h1>
+      <p>Mechanical engineer and lifelong learner</p>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+      <img src="assets/images/project1.jpg">
+      <img src="assets/images/project2.jpg">
+      <img src="assets/images/project3.jpg">
+      <img src="assets/images/project4.jpg">
+      <img src="assets/images/project5.jpg">
+      <img src="assets/images/project6.jpg">
+      <img src="assets/images/project7.jpg">
+      <img src="assets/images/project8.jpg">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <img src="assets/images/profile.jpg" class="about-img">
+
+      <div class="about-text">
+        <h2>Hello, I’m Pavi</h2>
         <p>
-            I’m a Mechanical Engineering student focused on robotics, controls,
-            and embedded systems.
+          I’m a mechanical engineering student focused on robotics, autonomy,
+          and systems-level problem solving.
         </p>
-    </section>
+        <p>
+          I’m a third-year undergraduate at Northwestern University...
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+  <!-- COMMUNITY -->
+  <section id="community" class="community">
+    <h2>Community</h2>
+    <div class="community-grid">
+      <img src="assets/images/community1.jpg">
+      <img src="assets/images/community2.jpg">
+    </div>
+  </section>
 
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Short description of what you built and technologies used.</p>
-        </div>
-
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your@email.com</p>
-    </section>
+  <!-- FOOTER -->
+  <footer id="contact">
+    <a href="mailto:your@email.com">Email</a>
+    <a href="#">LinkedIn</a>
+    <a href="resume.pdf" download>Resume</a>
+  </footer>
 
 </body>
 </html>
