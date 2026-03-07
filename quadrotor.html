@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quadrotor Design & Autonomous Control — Pavi</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="logo" style="text-decoration:none;color:black;">PAVI</a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">PROJECTS</a></li>
+    <li><a href="index.html#about">ABOUT</a></li>
+    <li><a href="index.html#community">COMMUNITY</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="project-hero">
+  <a href="index.html#projects" class="back-link">Back to Projects</a>
+  <div class="project-hero-text">
+    <h1>Quadrotor Design &amp; Autonomous Control</h1>
+    <p style="font-size:16px; opacity:0.9;">I worked with a partner to build, program and autonomously control a flying quadrotor robot through a 10 week class project. First, we implemented manual joystick control before progressing to full autonomous control.</p>
+    <div class="skills-row">
+      <span class="skill-pill">Mechatronics</span>
+      <span class="skill-pill">Coding in C</span>
+      <span class="skill-pill">Problem Solving</span>
+    </div>
+  </div>
+  <figure>
+    <video controls width="100%">
+      <source src="assets/CS410/first_flight_cropped.mov" type="video/mp4">
+    </video>
+    <figcaption>Quadrotor manual control test flight</figcaption>
+  </figure>
+</div>
+
+<!-- CONTENT -->
+<div class="project-content">
+
+  <!-- SETUP -->
+  <div class="two-col reverse">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Setup, Calibration and Noise Filter</h2>
+      <p>To set up, I took the lead on assembling the robot's onboard electronics mount for a Raspberry Pi zero and IMU. 
+        We calibrated the IMU accelerometer and gyroscope readings digitally. Next, we implemented a complementary filter for roll and pitch to achieve stable low level control later under manual control or with an autonomous feedback controller. 
+        This combined high frequency data from the gyroscope and low frequency data from the accelerometer.</p>
+        <!-- PITCH CONTROL + MANUAL -->
+      <h2>Manual Control with PID</h2>
+      <p>The robot was then programmed using a PID controller, sufficiently maintaing a stable hover of 10cm radius. We could fully manually control the robot with a joystick. 
+        This included functioning safety checks/limits on the robot's pitch and roll; for example a maximum roll of 45º would cause the motors to turn off immediately.</p>
+    </div>
+    <figure>
+      <img src="assets/CS410/pitch_plot.png" alt="Tuning Pitch Control graph" style="height:310px;object-fit:contain;background:#f7f7f7;">
+      <figcaption>Tuning pitch control by tracking a desired pitch input</figcaption>
+    </figure>
+  </div>
+
+  <!-- AUTONOMY + YAW -->
+  <div class="two-col">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Adding Autonomous Control</h2>
+      <p>We attached a camera as sensor input to the top of the robot and could switch on autonomous control with the joystick. Using camera feedback for the autonomous feedback controller, the robot was able to track a tag.
+         The final autonomous flights had good yaw control in ground effect and could sustain stable flight up to 30cm from the ground!</p>
+    </div>
+    <figure>
+      <img src="assets/CS410/yaw_plot.png" alt="Yaw Control graph" style="height:255px;object-fit:contain;background:#f7f7f7;">
+      <figcaption>Testing camera yaw control by regularly rotating the tag</figcaption>
+    </figure>
+  </div>
+
+  <!-- BOTTOM MEDIA -->
+  <div class="media-row">
+    <figure>
+      <img src="assets/CS410/quadrotor.png" alt="Quadrotor in flight" style="height:255px;object-fit:cover;width:100%;">
+      <figcaption>Quadrotor in flight</figcaption>
+    </figure>
+    <figure style="width: 100%; max-width: 500px;">
+      <div style="height: 255px; overflow: hidden;">
+        <video controls style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+          <source src="assets/CS410/yaw_vid.mov" type="video/mp4">
+        </video>
+      </div>
+      <figcaption>Autonomous yaw test</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <a href="mailto:your@email.com">📧 Email</a>
+  <a href="#">💼 LinkedIn</a>
+  <a href="resume.pdf" download>📄 Resume</a>
+</footer>
+
+</body>
+</html>

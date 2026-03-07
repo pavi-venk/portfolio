@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bike Brake Calipers — Pavi</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="logo" style="text-decoration:none;color:black;">PAVI</a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">PROJECTS</a></li>
+    <li><a href="index.html#about">ABOUT</a></li>
+    <li><a href="community.html">COMMUNITY</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="project-hero">
+  <a href="index.html#projects" class="back-link">Back to Projects</a>
+  <div class="project-hero-text">
+    <h1>Bike Brake Calipers</h1>
+    <p style="font-size:16px; opacity:0.9; max-width:560px;">I worked with a team to create bike brake calipers for my mechanical design and manufacturing class project. We optimized design while achieving a stopping distance under 15m.</p>
+    <div class="skills-row">
+      <span class="skill-pill">Siemens NX</span>
+      <span class="skill-pill">CAD</span>
+      <span class="skill-pill">Topology Optimization</span>
+      <span class="skill-pill">Mechanical Design</span>
+      <span class="skill-pill">Rapid Prototyping</span>
+    </div>
+    <a href="assets/bike claiper/final_report.pdf" download class="skill-pill" style="text-decoration:none; margin-top:8px; align-self:flex-start; background:var(--lavender-dark);">See Final Report</a>
+    </div>
+  <figure style = "text-align:center;">
+    <img src="assets/bike claiper/calipers_cad.png" style="width:70%; height:360px; object-fit:cover; border-radius:4px;">
+    <figcaption>Finite Element Analysis on final design of bike brake calipers</figcaption>
+  </figure>
+</div>
+
+<!-- CONTENT -->
+<div class="project-content">
+
+  <!-- DESIGN NEEDS -->
+  <div class="two-col">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Design Metrics & Industry Standards</h2>
+      <p>I took the lead for my team to create design specifications, needs and metrics. I researched ISO standards for bike brake calipers to ensure we met key safety standards applicable to industry. This applied to forces, materials, operating conditions and more.</p>
+
+      <h2>Concept development</h2>
+      <p>To identify the design space, I conducted force analysis on the calipers using estimated brake pad normal force, frictional force and brake cable force. These forces revealed the expected load paths, which were incorporated into the design space.</p>
+      <p style="margin-top:16px;">Using the Siemens NX CAD and topology optimization tools, my team and I created the first version of the brake calipers.</p>
+    </div>
+    <figure>
+      <img src="assets/bike claiper/bike brake v1.png" style="width:100%;">
+      <figcaption>First version of bike brake calipers</figcaption>
+    </figure>
+  </div>
+
+  <!-- CONCEPT DEVELOPMENT -->
+  <div class="two-col reverse">
+    <div class="project-section" style="margin-bottom:0;">
+      
+      <!-- DESIGN ITERATION -->
+      <h2>Design iteration</h2>
+      <p>We tested a nylon prototype of our first design, which was 3D printed on a Formlabs Fuse 1+ printer. My team decided to reduce the mass of the design further for the final prototype. We also noticed a few areas of interference between external fasteners and the moving design, which required more clearance.</p>
+      <p style="margin-top:16px;">I used NX topology optimization to pinpoint areas in the design that experienced lower stresses and reduced material in those locations.</p>
+    </div>
+    <div>
+      <figure style = "text-align:center;">
+        <img src="assets/bike claiper/caliper_contact2 copy.png" style="width: 100%; max-width: 400px;">
+        <figcaption>Fastener interference during testing</figcaption>
+      </figure>
+    </div>
+  </div>
+
+
+  <!-- FINAL TESTING -->
+  <div class="two-col">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Final testing</h2>
+      <p>At the end of the course, we completed a final riding test of the new caliper design. The nylon calipers were mounted onto a bicycle and successfully stopped the rider within a safety distance of 12.4m (under our desired goal of 15m). The calipers weighed 50 grams, a 3 gram reduction from the first prototype. </p>
+    </div>
+    <figure style = "text-align:center;">
+      <img src="assets/bike claiper/bike_calipers.png" style="width: 100%; max-width: 350px;">
+      <figcaption>Final brake calipers prototype</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <a href="mailto:your@email.com">📧 Email</a>
+  <a href="#">💼 LinkedIn</a>
+  <a href="resume.pdf" download>📄 Resume</a>
+</footer>
+
+</body>
+</html>
