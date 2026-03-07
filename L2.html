@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Level 2 High Power Rocketry — Pavi</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="logo" style="text-decoration:none;color:black;">PAVI</a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">PROJECTS</a></li>
+    <li><a href="index.html#about">ABOUT</a></li>
+    <li><a href="community.html">COMMUNITY</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="project-hero">
+  <a href="index.html#projects" class="back-link">Back to Projects</a>
+  <div class="project-hero-text">
+    <h1>Level 2 High Power Rocketry</h1>
+    <p style="font-size:16px; opacity:0.9; max-width:560px;">In spring 2025, I built and launched Symphony, my own level 2 high power rocket, to obtain my NAR certification.</p>
+    <div class="skills-row">
+      <span class="skill-pill">OnShape CAD</span>
+      <span class="skill-pill">OpenRocket</span>
+      <span class="skill-pill">Manufacturing</span>
+    </div>
+  </div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:8px;">
+    <img src="assets/L2/me and L2.JPG" style="width:100%; height:270px; object-fit:cover; border-radius:4px;">
+    <img src="assets/L2/launch.JPG" style="width:100%; height:270px; object-fit:cover; border-radius:4px;" class="L2">
+    <img src="assets/L2/me reaching L2.JPG" style="width:100%; height:270px; object-fit:cover; border-radius:4px;">
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="project-content">
+
+  <!-- DESIGN CAD -->
+  <div class="two-col">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Design - CAD</h2>
+      <p>I based my CAD model off the Wildman Drago 4 kit. I created a model using OnShape to verify the lengths and fit of the launch vehicle components. I also designed my custom avionics sled for the flight computers, which was 3D printed from PLA.</p>
+    </div>
+    <figure>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+        <img src="assets/L2/cad L2.png" style="width:100%; height:200px; object-fit:cover;">
+        <img src="assets/L2/sled cad.png" style="width:100%; height:200px; object-fit:cover;">
+      </div>
+      <figcaption>OnShape CAD model of launch vehicle and avionics sled</figcaption>
+    </figure>
+  </div>
+
+  <!-- DESIGN OPENROCKET -->
+  <div class="two-col reverse">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Design - OpenRocket</h2>
+      <p>I used OpenRocket to simulate the flight (J450 motor) and recovery based on my chosen 48" parachute and drogue shock cord. My recovery method was head-end deployment of the parachute.</p>
+    </div>
+    <figure>
+      <img src="assets/L2/OR L2.png" style="width:100%;">
+      <figcaption>OpenRocket design of launch vehicle with motor and recovery components</figcaption>
+    </figure>
+  </div>
+
+  <!-- GROUND TESTING -->
+  <div class="two-col">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Ground testing</h2>
+      <p>I needed to size my ejection charges using hand calculations. I evaluated the force required to shear the shear pins at the nose cone and booster section, then determined how many grams of black powder I needed to create sufficient pressure.</p>
+      <p style="margin-top:16px;">I found that my ejection charges required 3 grams of black powder. To verify this would create successful separation, I conducted a ground test that simulated apogee and main deployment.</p>
+    </div>
+    <div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; align-items:start;">
+        <figure style="margin:0;">
+          <img src="assets/L2/IMG_4045.jpeg" style="width:100%; height:255px; object-fit:cover;">
+        </figure>
+        <figure style="margin:0;">
+          <div style="height:255px; overflow:hidden;">
+            <video controls style="width:100%; height:100%; object-fit:cover; object-position:center;">
+              <source src="assets/L2/L2GTno_audio.mov" type="video/mp4">
+            </video>
+          </div>
+        </figure>
+      </div>
+      <figcaption style="text-align:center; margin-top:8px; font-size:13px; color:#888; font-style:italic;">Ground testing</figcaption>
+    </div>
+  </div>
+
+  <!-- LAUNCH -->
+  <div class="two-col reverse">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Launch!</h2>
+      <p>On June 7th, I launched Symphony at the Richard Bong State Recreation park in Wisconsin. The launch and recovery were successful, so I was Level 2 certified!</p>
+      <p style="margin-top:16px;">Afterwards, I retrieved the flight data from the onboard RRC3 flight computers, which showed a total apogee of 3490ft and parachute deployment at 600ft.</p>
+    </div>
+    <div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <figure style="margin:0">
+          <div style="height:255px; overflow:hidden;">
+          <img src="assets/L2/IMG_4087.jpeg" style="width:100%; height:255px; object-fit:cover;">
+          </div>
+          <figcaption style="font-size:13px; color:#888; font-style:italic; margin-top:6px; text-align:center;">Altimeter data post-flight</figcaption>
+        </figure>
+        <figure style="margin:0;">
+          <div style="height:255px; overflow:hidden;">
+            <video controls style="width:100%; height:100%; object-fit:cover; object-position:center;">
+              <source src="assets/L2/L2_trimmed.mov" type="video/mp4">
+            </video>
+          </div>
+          <figcaption style="font-size:13px; color:#888; font-style:italic; margin-top:6px; text-align:center;">Launch video</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <a href="mailto:your@email.com">📧 Email</a>
+  <a href="#">💼 LinkedIn</a>
+  <a href="resume.pdf" download>📄 Resume</a>
+</footer>
+
+</body>
+</html>
