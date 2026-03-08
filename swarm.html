@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Swarm Robotics Research — Pavi</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html" class="logo" style="text-decoration:none;color:black;">PAVI</a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">PROJECTS</a></li>
+    <li><a href="index.html#about">ABOUT</a></li>
+    <li><a href="community.html">COMMUNITY</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="project-hero">
+  <a href="index.html#projects" class="back-link">Back to Projects</a>
+  <div class="project-hero-text">
+    <h1>Swarm Robotics Research</h1>
+    <p style="font-size:16px; opacity:0.9; max-width:560px;">I have been an undergraduate research assistant with the Rubenstein Lab since my first year at Northwestern. During this time, I have designed electronics mounts, built robots and coded the operating system infrastructure. </p>
+    <div class="skills-row">
+      <span class="skill-pill">CAD</span>
+      <span class="skill-pill">3D Printing</span>
+      <span class="skill-pill">Testing</span>
+      <span class="skill-pill">Python/C</span>
+      <span class="skill-pill">Simulation</span>
+      <span class="skill-pill">Data Management</span>
+    </div>
+  </div>
+  <figure>
+    <img src="assets/me with robot.jpg" style="width:80%; height:300px; object-fit:cover; border-radius:4px;">
+  </figure>
+</div>
+
+<!-- CONTENT -->
+<div class="project-content">
+
+  <!-- BUILDING ELECTRONICS HOUSING -->
+  <div class="two-col">
+    <div class="project-section" style="margin-bottom:0;">
+      <h2>Building quadrotor electronics housing components</h2>
+      <p>One of my first projects was to design housing for the electrical components onboard the robot.</p>
+      <p style="margin-top:16px;">I went through many iterations of spacer designs (e.g. snap fit spacers) and board designs. All of my iterations were tested via 3D printing on Bambu/Ultimaker printers. I learned about tolerances and the obstacles in translating a CAD design into reality based on the manufacturing method involved.</p>
+    </div>
+    <figure>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+        <img src="assets/frame cad.png" style="width:100%; height:190px; object-fit:cover; border-radius:4px;">
+        <img src="assets/mount.png" style="width:100%; height:200px; object-fit:cover; border-radius:4px;">
+      </div>
+      <figcaption>CAD and printed prototype</figcaption>
+    </figure>
+  </div>
+
+  <!-- TUNING PID/LQR -->
+  <div class="project-section">
+    <h2>Tuning PID/LQR control</h2>
+    <p style="max-width:100%;">After gaining experience building and assembling the robots, I tuned the PID and LQR versions of the robot position control. I conducted flight experiments in the OptiTrack motion capture arena to observe and record the tests. After tuning, the position error reduced to about 2cm during flight.</p>
+  </div>
+
+  <!-- ONGOING -->
+  <div class="project-section">
+    <h2>Ongoing - Landing sequence behavior</h2>
+    <p style="max-width:100%;">My latest work involves programming for the landing and recharging sequence when there is a larger swarm. I am identifying which landing stations are occupied and available, and sending this information to the robots to make their decision on where to land for a battery swap.</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <a href="mailto:your@email.com">📧 Email</a>
+  <a href="#">💼 LinkedIn</a>
+  <a href="resume.pdf" download>📄 Resume</a>
+</footer>
+
+</body>
+</html>
